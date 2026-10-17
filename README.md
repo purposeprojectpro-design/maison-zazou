@@ -7,6 +7,11 @@ Site statique (HTML + CSS, sans framework) prêt pour GitHub et Netlify.
 | Fichier | Rôle |
 | --- | --- |
 | `index.html` | Page d'accueil (ouverture, 2 produits, Duo, En ce moment, coupe teckel, esprit Zazou, engagements) |
+| `collection.html` | Nouveautés : les 4 articles |
+| `le-paletot.html`, `le-pull.html`, `le-terrier.html` | Pages produit (galerie, tailles, liste d'attente) |
+| `le-duo.html` | Offre Paletot + Pull |
+| `le-teckel.html` | La coupe teckel |
+| `la-maison.html` | La Maison : Azalée, l'esprit zazou |
 | `guide-des-tailles.html` | Guide des 7 tailles teckel |
 | `mentions-legales.html` | Mentions légales — **à compléter** (champs entre crochets) |
 | `404.html` | Page introuvable |
@@ -33,8 +38,8 @@ Site statique (HTML + CSS, sans framework) prêt pour GitHub et Netlify.
 
 Option rapide sans GitHub : app.netlify.com/drop, puis glisser le dossier.
 
-### 3. Newsletter
-Le formulaire utilise **Netlify Forms** : les inscriptions apparaissent dans Netlify → Site → Forms. Rien à installer.
+### 3. Newsletter et liste d'attente
+Les deux formulaires utilisent **Netlify Forms** : les inscriptions (avec la pièce et la taille choisies) apparaissent dans Netlify → Forms. Rien à installer.
 
 ### 4. Nom de domaine
 Netlify → Domain management → Add a domain (ex. `maisonzazou.fr`). Vérifier d'abord la disponibilité de la marque (INPI, classes 18 et 25).
