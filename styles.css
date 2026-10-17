@@ -1,0 +1,184 @@
+/* Maison Zazou — feuille de style */
+:root {
+  --ink: #000000;
+  --muted: #555555;
+  --line: #e6e6e6;
+  --cream: #f7f4f1;
+  --white: #ffffff;
+  --font: 'Poppins', system-ui, -apple-system, sans-serif;
+  --logo: 'Montserrat', 'Poppins', sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+a:hover { opacity: 0.75; }
+button { font: inherit; color: inherit; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.skip-link { position: absolute; left: -9999px; top: 0; background: #fff; padding: 8px 12px; z-index: 100; }
+.skip-link:focus { left: 8px; }
+
+/* ---------- Logo ---------- */
+.logo { display: flex; flex-direction: column; align-items: center; line-height: 1; }
+.logo__maison { font-size: 9px; font-weight: 500; letter-spacing: 0.5em; padding-left: 0.5em; }
+.logo__name { font-family: var(--logo); font-weight: 600; font-size: 40px; letter-spacing: 0.1em; padding-left: 0.1em; line-height: 1.05; }
+.logo__paris { font-size: 8px; font-weight: 500; letter-spacing: 0.2em; padding-left: 0.2em; }
+.logo--small .logo__maison { font-size: 7px; }
+.logo--small .logo__name { font-size: 24px; }
+.logo--small .logo__paris { font-size: 6px; }
+
+/* ---------- En-tête ---------- */
+.site-top { position: absolute; top: 0; left: 0; right: 0; z-index: 10; color: var(--white); }
+.site-top--solid { position: static; color: var(--ink); border-bottom: 1px solid var(--line); }
+.announce { text-align: center; padding: 10px 16px; font-size: 13px; }
+.header { max-width: 1440px; margin: 0 auto; padding: 14px 40px 0; }
+.header__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.header__side { flex: 1 1 0; display: flex; align-items: center; gap: 4px; }
+.header__side--left { font-size: 12px; text-transform: uppercase; }
+.header__side--right { justify-content: flex-end; }
+.icon-btn {
+  width: 44px; height: 44px; border: 0; background: transparent; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; color: inherit;
+}
+.icon-btn svg { width: 22px; height: 22px; }
+.nav {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px;
+  padding: 18px 0 16px; font-size: 17px; text-transform: uppercase;
+}
+
+/* ---------- Photos ---------- */
+.photo { position: relative; overflow: hidden; background: #2e2824; }
+.photo img { width: 100%; height: 100%; object-fit: cover; }
+.photo--shade::after { content: ''; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.32); }
+
+/* ---------- Ouverture ---------- */
+.hero { position: relative; height: 760px; display: flex; }
+.hero .photo { flex: 1 1 50%; }
+.hero::after { content: ''; position: absolute; inset: 0 0 auto 0; height: 220px; background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,0)); pointer-events: none; }
+.dash-link {
+  display: inline-flex; align-items: center; gap: 14px;
+  font-size: 13px; text-transform: uppercase; white-space: nowrap;
+}
+.dash-link::before { content: ''; width: 32px; height: 1px; background: currentColor; }
+.hero__label, .banner__label {
+  position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+  color: var(--white); z-index: 2;
+}
+.banner__label { left: 25%; }
+.feature .photo--shade::after { background: rgba(0, 0, 0, 0.5); }
+
+/* ---------- Produits ---------- */
+.products {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1440px; margin: 0 auto; padding-bottom: 64px;
+}
+.product { display: flex; flex-direction: column; align-items: center; text-align: center; padding-bottom: 24px; }
+.product .photo { width: 100%; aspect-ratio: 1 / 1; background: var(--cream); }
+.product__line { margin-top: 20px; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+.product__name { margin-top: 6px; font-size: 15px; text-transform: uppercase; font-weight: 400; }
+.product__price { margin-top: 6px; font-size: 14px; }
+.product__sizes { margin-top: 4px; font-size: 12px; color: var(--muted); }
+
+/* ---------- Bannière Duo ---------- */
+.banner { position: relative; display: flex; min-height: 640px; }
+.banner .photo { flex: 1 1 50%; }
+.banner__title {
+  position: absolute; z-index: 2; top: 50%; left: 25%; transform: translate(-50%, -50%);
+  margin: 0; color: var(--white); font-weight: 700; font-size: 96px; line-height: 0.95;
+  text-transform: uppercase; text-align: right; letter-spacing: 0;
+}
+
+/* ---------- Titres de section ---------- */
+.section-title { margin: 0 0 40px; text-align: center; font-size: 22px; font-weight: 400; text-transform: uppercase; }
+
+/* ---------- Tuiles ---------- */
+.tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; }
+.tile { position: relative; aspect-ratio: 16 / 10; display: block; color: var(--white); }
+.tile .photo { position: absolute; inset: 0; }
+.tile .dash-link { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); z-index: 2; }
+
+/* ---------- Bandeau teckel ---------- */
+.feature { position: relative; min-height: 620px; display: flex; align-items: center; justify-content: center; padding: 64px 24px; color: var(--white); margin-top: 4px; }
+.feature .photo { position: absolute; inset: 0; }
+.feature__text { position: relative; z-index: 2; max-width: 560px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.feature__text h2 { margin: 0; font-size: 22px; font-weight: 400; text-transform: uppercase; }
+.feature__text p { margin: 0; font-size: 15px; line-height: 1.8; font-weight: 300; }
+
+/* ---------- Ateliers ---------- */
+.ateliers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; }
+.atelier { position: relative; aspect-ratio: 2 / 1; display: flex; align-items: center; justify-content: center; }
+.atelier .photo { position: absolute; inset: 0; }
+.atelier__label { position: relative; z-index: 2; background: var(--white); color: var(--ink); padding: 12px 18px; font-size: 15px; text-transform: uppercase; }
+
+/* ---------- Engagements ---------- */
+.promise { max-width: 1100px; margin: 0 auto; padding: 88px 24px 72px; }
+.promise__divider { display: flex; align-items: center; gap: 32px; }
+.promise__divider::before, .promise__divider::after { content: ''; flex: 1 1 0; height: 1px; background: #cccccc; }
+.promise__grid { margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; text-align: center; }
+.promise__item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.promise__item svg { width: 56px; height: 56px; }
+.promise__title { font-size: 14px; text-transform: uppercase; font-weight: 500; }
+.promise__text { font-size: 14px; color: var(--muted); }
+
+/* ---------- Pied de page ---------- */
+.footer { border-top: 1px solid var(--line); }
+.footer__inner { max-width: 1440px; margin: 0 auto; padding: 56px 56px 40px; display: flex; flex-direction: column; gap: 40px; }
+.footer__cols { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 32px; font-size: 14px; }
+.footer__col { display: flex; flex-direction: column; gap: 10px; }
+.footer__heading { font-size: 12px; font-weight: 500; text-transform: uppercase; margin-bottom: 8px; }
+.footer__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; }
+.newsletter { display: flex; flex-direction: column; gap: 12px; flex: 0 1 560px; }
+.newsletter__row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px; }
+.newsletter label.newsletter__label { font-size: 12px; font-weight: 500; text-transform: uppercase; }
+.newsletter input[type=email] {
+  flex: 1 1 220px; min-height: 44px; border: 0; border-bottom: 1px solid var(--ink);
+  background: transparent; font: 14px var(--font); color: var(--ink); padding: 0 2px;
+}
+.newsletter button { min-height: 44px; border: 0; background: transparent; cursor: pointer; font-size: 14px; padding: 0 4px; }
+.newsletter__consent { display: flex; gap: 10px; align-items: flex-start; font-size: 12px; color: var(--muted); line-height: 1.5; }
+.newsletter__consent input { margin-top: 2px; width: 16px; height: 16px; }
+.newsletter__msg { font-size: 13px; color: var(--muted); min-height: 1em; }
+.copyright { font-size: 12px; color: var(--muted); }
+
+/* ---------- Pages intérieures ---------- */
+.page { max-width: 960px; margin: 0 auto; padding: 72px 24px 96px; }
+.page h1 { margin: 0 0 12px; font-size: 26px; font-weight: 400; text-transform: uppercase; text-align: center; }
+.page .lead { margin: 0 auto 48px; max-width: 620px; text-align: center; color: var(--muted); line-height: 1.7; }
+.page h2 { font-size: 16px; font-weight: 500; text-transform: uppercase; margin: 48px 0 16px; }
+.page p, .page li { line-height: 1.75; font-size: 15px; }
+.table-wrap { overflow-x: auto; }
+.size-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.size-table th, .size-table td { padding: 12px 10px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+.size-table th { font-weight: 500; text-transform: uppercase; font-size: 11px; letter-spacing: 1px; }
+.size-table td:first-child { font-weight: 500; }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 900px) {
+  .header { padding: 10px 16px 0; }
+  .nav { justify-content: center; font-size: 13px; gap: 6px 18px; }
+  .logo__name { font-size: 30px; }
+  .hero { height: 620px; }
+  .hero .photo:last-child { display: none; }
+  .banner { flex-direction: column; }
+  .banner .photo { min-height: 360px; }
+  .banner__title { top: 180px; left: 50%; font-size: 64px; text-align: center; }
+  .banner__label { bottom: auto; top: 320px; left: 50%; }
+  .products, .tiles, .ateliers { grid-template-columns: 1fr; }
+  .promise__grid { grid-template-columns: 1fr; }
+  .footer__inner { padding: 40px 20px 32px; }
+  .footer__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .header__side--left a { display: none; }
+}
