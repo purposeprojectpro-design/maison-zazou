@@ -4,146 +4,121 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maison Zazou – Dog couture, Paris</title>
-  <meta name="description" content="Maison Zazou, dog couture parisienne. Manteaux et pulls haut de gamme coupés pour le teckel : sept tailles, échange de taille offert.">
+  <meta name="description" content="Maison Zazou, dog couture parisienne : manteau, pull et plaid coupés pour le teckel. Sept tailles, échange offert.">
   <meta property="og:title" content="Maison Zazou – Dog couture, Paris">
-  <meta property="og:description" content="Le Paletot et le Pull Torsadé, coupés pour le teckel.">
+  <meta property="og:description" content="Maison Zazou, dog couture parisienne : manteau, pull et plaid coupés pour le teckel. Sept tailles, échange offert.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1665004063236-998c3f11ce4b?w=1200&q=80&auto=format&fit=crop">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;400;500;700&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="site-top site-top--overlay">
+  <p class="announce">Livraison offerte dès 100 € · Retours sous 30 jours</p>
+  <header class="header">
+    <div class="header__row">
+      <div class="header__side header__side--left">
+        <button class="icon-btn burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+        <a class="nav-link-text" href="guide-des-tailles.html">Guide des tailles</a>
+      </div>
+      <a class="logo" href="index.html" aria-label="Maison Zazou, accueil">
+        <span class="logo__maison">MAISON</span><span class="logo__name">ZAZOU</span><span class="logo__paris">PARIS</span>
+      </a>
+      <div class="header__side header__side--right">
+        <button class="icon-btn hide-mobile" type="button" aria-label="Rechercher"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+        <button class="icon-btn hide-mobile" type="button" aria-label="Mes favoris"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></button>
+        <button class="icon-btn hide-mobile" type="button" aria-label="Mon compte"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></button>
+        <button class="icon-btn" type="button" aria-label="Panier, 0 article"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></button>
+      </div>
+    </div>
+    <nav id="menu" class="nav" aria-label="Navigation principale">
+      <button class="icon-btn menu-close nav__extra" type="button" aria-label="Fermer le menu"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <a href="collection.html">Nouveautés</a>
+      <a href="le-paletot.html">Le Paletot</a>
+      <a href="le-pull.html">Le Pull</a>
+      <a href="le-terrier.html">Le Plaid</a>
+      <a href="le-teckel.html">Le Teckel</a>
+      <a href="la-maison.html">La Maison</a>
+      <a href="le-duo.html">Le Duo</a>
+      <a class="nav__extra" href="guide-des-tailles.html">Guide des tailles</a>
+    </nav>
+  </header>
+</div>
 
 <main id="contenu">
-
-  <!-- Ouverture : en-tête posé sur la photo, comme les grandes maisons -->
   <section class="hero" aria-label="Collection Automne Hiver 2026">
-    <div class="photo"><img src="https://images.unsplash.com/photo-1665004063236-998c3f11ce4b?w=1400&q=80&auto=format&fit=crop" alt="Teckel chocolat allongé dans la pénombre"></div>
-    <div class="photo"><img src="https://images.unsplash.com/photo-1536867520774-5b4f2628a69b?w=1400&q=80&auto=format&fit=crop" alt="Ruban de mesure et ciseaux de tailleur sur un satin"></div>
-
-    <div class="site-top">
-      <p class="announce">Livraison offerte dès 100 €</p>
-      <header class="header">
-        <div class="header__row">
-          <div class="header__side header__side--left">
-            <a href="guide-des-tailles.html">Guide des tailles</a>
-          </div>
-          <a class="logo" href="index.html" aria-label="Maison Zazou, accueil">
-            <span class="logo__maison">MAISON</span>
-            <span class="logo__name">ZAZOU</span>
-            <span class="logo__paris">PARIS</span>
-          </a>
-          <div class="header__side header__side--right">
-            <button class="icon-btn" type="button" aria-label="Rechercher"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
-            <button class="icon-btn" type="button" aria-label="Mes favoris"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></button>
-            <button class="icon-btn" type="button" aria-label="Mon compte"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></button>
-            <button class="icon-btn" type="button" aria-label="Panier, 0 article"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></button>
-          </div>
-        </div>
-        <nav class="nav" aria-label="Navigation principale">
-          <a href="collection.html">Nouveautés</a>
-          <a href="le-paletot.html">Le Paletot</a>
-          <a href="le-pull.html">Le Pull</a>
-          <a href="le-terrier.html">Le Plaid</a>
-          <a href="le-teckel.html">Le Teckel</a>
-          <a href="la-maison.html">La Maison</a>
-          <a href="le-duo.html">Le Duo</a>
-        </nav>
-      </header>
-    </div>
-
+    <div class="photo"><img src="https://images.unsplash.com/photo-1665004063236-998c3f11ce4b?w=1600&q=80&auto=format&fit=crop" alt="Teckel chocolat allongé dans la pénombre" style="object-position:40% 50%" decoding="async"></div>
+    <div class="photo"><img src="https://images.unsplash.com/photo-1536867520774-5b4f2628a69b?w=1600&q=80&auto=format&fit=crop" alt="Ruban de mesure et ciseaux de tailleur sur un satin" style="object-position:50% 50%" decoding="async"></div>
     <a class="dash-link hero__label" href="collection.html">Automne Hiver 2026</a>
   </section>
 
-  <!-- Les deux pièces de lancement -->
-  <section id="collection" aria-label="La collection">
+  <section aria-label="La collection">
     <h2 class="visually-hidden">La collection Saint-Germain</h2>
     <div class="products">
-      <a class="product" id="paletot" href="le-paletot.html">
-        <span class="photo"><img src="https://images.unsplash.com/photo-1697939829612-f2ee98421a53?w=1000&q=80&auto=format&fit=crop" alt="Teckel portant un manteau, assis sur un banc" loading="lazy"></span>
+      <a class="product" href="le-paletot.html">
+        <span class="photo"><img src="https://images.unsplash.com/photo-1697939829612-f2ee98421a53?w=900&q=80&auto=format&fit=crop" alt="Teckel portant le Paletot" style="object-position:35% 40%" loading="lazy" decoding="async"></span>
         <span class="product__line">Saint-Germain de Zazou</span>
         <h3 class="product__name">Le Paletot</h3>
         <span class="product__price">€129,00</span>
-        <span class="product__sizes">Laine et cachemire · XXS à XXL</span>
       </a>
-      <a class="product" id="pull" href="le-pull.html">
-        <span class="photo"><img src="https://images.unsplash.com/photo-1622150749206-4168a393b139?w=1000&q=80&auto=format&fit=crop" alt="Teckel portant un pull en maille" loading="lazy"></span>
+      <a class="product" href="le-pull.html">
+        <span class="photo"><img src="https://images.unsplash.com/photo-1622150749206-4168a393b139?w=900&q=80&auto=format&fit=crop" alt="Teckel portant le Pull Torsadé" style="object-position:50% 40%" loading="lazy" decoding="async"></span>
         <span class="product__line">Saint-Germain de Zazou</span>
         <h3 class="product__name">Le Pull Torsadé</h3>
         <span class="product__price">€69,00</span>
-        <span class="product__sizes">Laine mérinos · XXS à XXL</span>
       </a>
-      <a class="product" id="terrier" href="le-terrier.html">
-        <span class="photo"><img src="https://images.unsplash.com/photo-1665004060926-42e6c83dc4e2?w=1000&q=80&auto=format&fit=crop" alt="Chien blotti dans un plaid" loading="lazy"></span>
-        <span class="product__line">Saint-Germain de Zazou</span>
+      <a class="product" href="le-terrier.html">
+        <span class="photo"><img src="https://images.unsplash.com/photo-1665004060926-42e6c83dc4e2?w=900&q=80&auto=format&fit=crop" alt="Teckel blotti dans un plaid" style="object-position:50% 50%" loading="lazy" decoding="async"></span>
+        <span class="product__line">Plaid-couette</span>
         <h3 class="product__name">Le Terrier</h3>
         <span class="product__price">€89,00</span>
-        <span class="product__sizes">Plaid-couette · 2 formats</span>
+      </a>
+      <a class="product" href="le-duo.html">
+        <span class="photo"><img src="https://images.unsplash.com/photo-1613051466655-682343e2f2dd?w=900&q=80&auto=format&fit=crop" alt="Teckel dans la neige" style="object-position:50% 35%" loading="lazy" decoding="async"></span>
+        <span class="product__line">Saint-Germain de Zazou</span>
+        <h3 class="product__name">Le Duo Paletot + Pull</h3>
+        <span class="product__price">€175,00 <s>€198,00</s></span>
       </a>
     </div>
   </section>
 
-  <!-- Le duo -->
-  <section class="banner" id="duo" aria-label="Le duo de l'hiver">
-    <div class="photo photo--shade"><img src="https://images.unsplash.com/photo-1621757298577-3d65e065ecbe?w=1400&q=80&auto=format&fit=crop" alt="Teckel brun sur une table en marbre" loading="lazy"></div>
-    <div class="photo"><img src="https://images.unsplash.com/photo-1613051466655-682343e2f2dd?w=1400&q=80&auto=format&fit=crop" alt="Teckel brun dans la neige" loading="lazy"></div>
-    <h2 class="banner__title">Le<br>Duo</h2>
-    <a class="dash-link banner__label" href="le-duo.html">Paletot + Pull : 175 €</a>
+  <section class="duo" aria-label="Le Duo">
+    <a class="duo__panel" href="le-duo.html">
+      <h2 class="duo__title">Le<br>Duo</h2>
+      <p class="duo__sub">Le Pull sous le Paletot · 175 €</p>
+      <span class="dash-link">Découvrir l'offre</span>
+    </a>
+    <div class="photo"><img src="https://images.unsplash.com/photo-1621757298577-3d65e065ecbe?w=1400&q=80&auto=format&fit=crop" alt="Teckel brun sur une table en marbre" style="object-position:35% 50%" loading="lazy" decoding="async"></div>
   </section>
 
-  <!-- En ce moment -->
-  <section aria-label="En ce moment" style="padding-top: 80px">
-    <h2 class="section-title">En ce moment</h2>
+  <section class="section" aria-labelledby="t-moment">
+    <h2 class="section-title" id="t-moment">En ce moment</h2>
     <div class="tiles">
-      <a class="tile" href="le-paletot.html">
-        <span class="photo photo--shade"><img src="https://images.unsplash.com/photo-1760413496862-2b8345eee603?w=1200&q=80&auto=format&fit=crop" alt="Chien en manteau rouge promené en ville" loading="lazy"></span>
-        <span class="dash-link">Le Paletot</span>
-      </a>
-      <a class="tile" href="le-pull.html">
-        <span class="photo photo--shade"><img src="https://images.unsplash.com/photo-1791584328574-c2e7253af6ff?w=1200&q=80&auto=format&fit=crop" alt="Teckel en pull vert sur une terrasse" loading="lazy"></span>
-        <span class="dash-link">Le Pull Torsadé</span>
-      </a>
-      <a class="tile" href="le-teckel.html">
-        <span class="photo photo--shade"><img src="https://images.unsplash.com/photo-1774440052293-35434686075d?w=1200&q=80&auto=format&fit=crop" alt="Teckel roux allongé sur un canapé" loading="lazy"></span>
-        <span class="dash-link">Le Teckel</span>
-      </a>
-      <a class="tile" href="la-maison.html">
-        <span class="photo photo--shade"><img src="https://images.unsplash.com/photo-1787505136265-9a99dad3bbac?w=1200&q=80&auto=format&fit=crop" alt="Couturière découpant un tissu dans un atelier" loading="lazy"></span>
-        <span class="dash-link">La Maison</span>
-      </a>
+      <a class="tile" href="le-paletot.html"><span class="photo photo--foot"><img src="https://images.unsplash.com/photo-1760413496862-2b8345eee603?w=1200&q=80&auto=format&fit=crop" alt="Teckel en manteau promené en ville" style="object-position:62% 72%" loading="lazy" decoding="async"></span><span class="dash-link">Le Paletot</span></a>
+      <a class="tile" href="le-pull.html"><span class="photo photo--foot"><img src="https://images.unsplash.com/photo-1791584328574-c2e7253af6ff?w=1200&q=80&auto=format&fit=crop" alt="Teckel en pull sur une terrasse" style="object-position:50% 70%" loading="lazy" decoding="async"></span><span class="dash-link">Le Pull Torsadé</span></a>
+      <a class="tile" href="le-terrier.html"><span class="photo photo--foot"><img src="https://images.unsplash.com/photo-1762121569469-1e36a03c1f10?w=1200&q=80&auto=format&fit=crop" alt="Teckel blotti dans une couverture" style="object-position:50% 50%" loading="lazy" decoding="async"></span><span class="dash-link">Le Terrier</span></a>
+      <a class="tile" href="la-maison.html"><span class="photo photo--foot"><img src="https://images.unsplash.com/photo-1741875801005-53f6b969426e?w=1200&q=80&auto=format&fit=crop" alt="Portrait d'un teckel chocolat" style="object-position:50% 40%" loading="lazy" decoding="async"></span><span class="dash-link">La Maison</span></a>
     </div>
   </section>
 
-  <!-- Coupe teckel -->
-  <section class="feature" id="teckel" aria-label="Pensé pour le teckel">
-    <div class="photo photo--shade" style="position:absolute"><img src="https://images.unsplash.com/photo-1741875801005-53f6b969426e?w=2000&q=80&auto=format&fit=crop" alt="" loading="lazy"></div>
-    <div class="feature__text">
-      <h2>Pensé pour le teckel</h2>
-      <p>Corps long, poitrail profond, pattes courtes : nos patrons sont dessinés d'abord pour lui. Sept tailles, du kaninchen au grand standard, et un échange de taille offert.</p>
-      <a class="dash-link" href="guide-des-tailles.html">Trouver sa taille</a>
-    </div>
-  </section>
+  <a class="wide" href="le-teckel.html">
+    <span class="photo photo--foot"><img src="https://images.unsplash.com/photo-1774440052293-35434686075d?w=2000&q=80&auto=format&fit=crop" alt="Teckel roux allongé sur un canapé" style="object-position:50% 45%" loading="lazy" decoding="async"></span>
+    <span class="dash-link">La coupe teckel</span>
+  </a>
 
-  <!-- L'esprit Zazou -->
-  <section id="maison" aria-label="L'esprit Zazou" style="padding-top: 88px">
-    <h2 class="section-title" style="margin-bottom: 32px">L'esprit Zazou</h2>
+  <section class="section" aria-labelledby="t-esprit">
+    <h2 class="section-title" id="t-esprit">L'esprit Zazou</h2>
     <div class="ateliers">
-      <a class="atelier" href="le-teckel.html">
-        <span class="photo"><img src="https://images.unsplash.com/photo-1633655442330-0b44ca0cce9b?w=1400&q=80&auto=format&fit=crop" alt="" loading="lazy"></span>
-        <span class="atelier__label">Le guide des tailles teckel</span>
-      </a>
-      <a class="atelier" href="la-maison.html">
-        <span class="photo"><img src="https://images.unsplash.com/photo-1681003564665-62848f8d481e?w=1400&q=80&auto=format&fit=crop" alt="" loading="lazy"></span>
-        <span class="atelier__label">Notre histoire</span>
-      </a>
+      <a class="atelier" href="la-maison.html"><span class="photo"><img src="https://images.unsplash.com/photo-1665004058785-1671b306d98a?w=1400&q=80&auto=format&fit=crop" alt="" style="object-position:50% 45%" loading="lazy" decoding="async"></span><span class="atelier__label">Azalée, notre égérie</span></a>
+      <a class="atelier" href="guide-des-tailles.html"><span class="photo"><img src="https://images.unsplash.com/photo-1633655442330-0b44ca0cce9b?w=1400&q=80&auto=format&fit=crop" alt="" style="object-position:center" loading="lazy" decoding="async"></span><span class="atelier__label">Le guide des tailles</span></a>
     </div>
   </section>
-
-  <!-- Engagements -->
   <section class="promise" aria-label="Nos engagements">
     <div class="promise__divider">
       <span class="logo logo--small" aria-hidden="true"><span class="logo__maison">MAISON</span><span class="logo__name">ZAZOU</span><span class="logo__paris">PARIS</span></span>
@@ -152,12 +127,12 @@
       <div class="promise__item">
         <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13h32v22H8z"/><path d="M8 14l16 12 16-12"/></svg>
         <span class="promise__title">Service client</span>
-        <span class="promise__text">Contactez-nous par e-mail</span>
+        <span class="promise__text">Réponse sous 24 h par e-mail</span>
       </div>
       <div class="promise__item">
         <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24a14 14 0 1024-9.9"/><path d="M34 7v7h-7"/></svg>
         <span class="promise__title">Retour</span>
-        <span class="promise__text">Sous 30 jours</span>
+        <span class="promise__text">Sous 30 jours, échange de taille offert</span>
       </div>
       <div class="promise__item">
         <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14h36v22H6z"/><path d="M6 20h36"/><path d="M12 30h8"/></svg>
@@ -166,7 +141,6 @@
       </div>
     </div>
   </section>
-
 </main>
 
 <footer class="footer" id="contact">
@@ -204,17 +178,17 @@
       </nav>
     </div>
     <div class="footer__bottom">
-      <form class="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form class="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-ok="Merci ! Vous recevrez les avant-premières de la Maison.">
         <input type="hidden" name="form-name" value="newsletter">
         <p class="visually-hidden"><label>Ne pas remplir : <input name="bot-field"></label></p>
         <div class="newsletter__row">
           <label class="newsletter__label" for="nl-email">Newsletter</label>
-          <input id="nl-email" name="email" type="email" placeholder="Adresse e-mail" required>
+          <input id="nl-email" name="email" type="email" placeholder="Adresse e-mail" autocomplete="email" required>
           <button type="submit">S'inscrire</button>
         </div>
         <label class="newsletter__consent"><input type="checkbox" name="consentement" required>J'accepte la politique de confidentialité de la newsletter</label>
       </form>
-      <span class="copyright">Copyright © 2026 Maison Zazou. Tous droits réservés · Photos : Unsplash</span>
+      <span class="copyright">© 2026 Maison Zazou. Tous droits réservés · Photos : Unsplash</span>
     </div>
   </div>
 </footer>

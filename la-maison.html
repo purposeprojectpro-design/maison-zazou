@@ -8,30 +8,37 @@
   <meta property="og:title" content="La Maison – Maison Zazou">
   <meta property="og:description" content="Maison Zazou, c'est Azalée : un teckel chocolat à poil court, égérie d'une maison de dog couture parisienne née de l'esprit zazou.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1665004063236-998c3f11ce4b?w=1200&q=80&auto=format&fit=crop">
+  <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;400;500;700&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
-<div class="site-top site-top--solid">
-  <p class="announce">Livraison offerte dès 100 €</p>
+<div class="site-top">
+  <p class="announce">Livraison offerte dès 100 € · Retours sous 30 jours</p>
   <header class="header">
     <div class="header__row">
-      <div class="header__side header__side--left"><a href="guide-des-tailles.html">Guide des tailles</a></div>
+      <div class="header__side header__side--left">
+        <button class="icon-btn burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+        <a class="nav-link-text" href="guide-des-tailles.html">Guide des tailles</a>
+      </div>
       <a class="logo" href="index.html" aria-label="Maison Zazou, accueil">
         <span class="logo__maison">MAISON</span><span class="logo__name">ZAZOU</span><span class="logo__paris">PARIS</span>
       </a>
       <div class="header__side header__side--right">
-        <button class="icon-btn" type="button" aria-label="Rechercher"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
-        <button class="icon-btn" type="button" aria-label="Mes favoris"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></button>
-        <button class="icon-btn" type="button" aria-label="Mon compte"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></button>
+        <button class="icon-btn hide-mobile" type="button" aria-label="Rechercher"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+        <button class="icon-btn hide-mobile" type="button" aria-label="Mes favoris"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></button>
+        <button class="icon-btn hide-mobile" type="button" aria-label="Mon compte"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></button>
         <button class="icon-btn" type="button" aria-label="Panier, 0 article"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></button>
       </div>
     </div>
-    <nav class="nav" aria-label="Navigation principale">
+    <nav id="menu" class="nav" aria-label="Navigation principale">
+      <button class="icon-btn menu-close nav__extra" type="button" aria-label="Fermer le menu"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
       <a href="collection.html">Nouveautés</a>
       <a href="le-paletot.html">Le Paletot</a>
       <a href="le-pull.html">Le Pull</a>
@@ -39,55 +46,41 @@
       <a href="le-teckel.html">Le Teckel</a>
       <a href="la-maison.html" aria-current="page">La Maison</a>
       <a href="le-duo.html">Le Duo</a>
+      <a class="nav__extra" href="guide-des-tailles.html">Guide des tailles</a>
     </nav>
   </header>
 </div>
 
-<main id="contenu" class="manifesto">
-
-  <div class="photo manifesto__hero"><img src="https://images.unsplash.com/photo-1665004063236-998c3f11ce4b?w=2000&q=80&auto=format&fit=crop" alt="Teckel chocolat allongé dans la pénombre"></div>
-
+<main id="contenu">
+  <div class="photo manifesto__hero"><img src="https://images.unsplash.com/photo-1665004063236-998c3f11ce4b?w=2000&q=80&auto=format&fit=crop" alt="Teckel chocolat allongé dans la pénombre" style="object-position:40% 50%" decoding="async"></div>
   <header class="manifesto__intro">
     <h1>La Maison Zazou</h1>
     <p>Une maison de dog couture née à Paris, d'un teckel chocolat et d'un vieux mot de la nuit parisienne.</p>
   </header>
-
   <section class="manifesto__block">
     <h2>Zazou, c'est Azalée</h2>
     <p>Azalée de son vrai nom. Un teckel à poil court, chocolat de la truffe au bout de la queue, sans la moindre marque feu.</p>
     <p>Une allure de zazou : insolente, élégante, inimitable. Le surnom est resté, la Maison en porte le nom. Azalée en est l'égérie.</p>
   </section>
-
-  <div class="photo manifesto__image"><img src="https://images.unsplash.com/photo-1681003564665-62848f8d481e?w=2000&q=80&auto=format&fit=crop" alt="Étagères de tissus dans un atelier" loading="lazy"></div>
-
+  <div class="photo manifesto__image"><img src="https://images.unsplash.com/photo-1681003564665-62848f8d481e?w=2000&q=80&auto=format&fit=crop" alt="Étagères de tissus dans un atelier" style="object-position:center" loading="lazy" decoding="async"></div>
   <section class="manifesto__block">
     <h2>L'esprit zazou</h2>
-    <p class="manifesto__lead">Paris, années 1940.</p>
+    <p class="manifesto__lead">Paris, années 1940</p>
     <p>Dans les caves de Saint-Germain, les zazous dansaient le swing en vestes longues, pantalons étroits et parapluie roulé. Une jeunesse qui refusait le gris.</p>
     <p>Maison Zazou reprend leur geste : le classique parisien, porté avec une pointe d'insolence.</p>
   </section>
-
+  <div class="photo manifesto__image"><img src="https://images.unsplash.com/photo-1536867520774-5b4f2628a69b?w=2000&q=80&auto=format&fit=crop" alt="Ruban de mesure et ciseaux de tailleur" style="object-position:center" loading="lazy" decoding="async"></div>
   <section class="manifesto__block">
-    <h2>Pensé pour le teckel</h2>
-    <p>Corps long, poitrail profond, pattes courtes : aucun vêtement standard ne lui va vraiment. Nos patrons sont dessinés d'abord pour lui, en sept tailles, du kaninchen au grand standard. La coupe couvre le ventre sans gêner les pattes avant.</p>
+    <h2>Peu de pièces, bien faites</h2>
+    <p>Plutôt que cent modèles, nous commençons par trois : le Paletot, le Pull Torsadé et le Terrier. Des pièces pensées pour aller ensemble, produites en petites séries, et perfectionnées avant d'en dessiner de nouvelles.</p>
   </section>
-
-  <div class="photo manifesto__image"><img src="https://images.unsplash.com/photo-1536867520774-5b4f2628a69b?w=2000&q=80&auto=format&fit=crop" alt="Ruban de mesure et ciseaux de tailleur" loading="lazy"></div>
-
-  <section class="manifesto__block">
-    <h2>Deux pièces, pas plus</h2>
-    <p>Plutôt que cent modèles, nous commençons par deux : le Paletot, en laine et cachemire, et le Pull Torsadé, en mérinos. Deux pièces pensées pour se porter ensemble, produites en petites séries, et perfectionnées avant d'en dessiner une troisième.</p>
-  </section>
-
-  <div class="photo manifesto__image"><img src="https://images.unsplash.com/photo-1613051466655-682343e2f2dd?w=2000&q=80&auto=format&fit=crop" alt="Teckel brun dans la neige" loading="lazy"></div>
-
+  <div class="photo manifesto__image"><img src="https://images.unsplash.com/photo-1613051466655-682343e2f2dd?w=2000&q=80&auto=format&fit=crop" alt="Teckel brun dans la neige" style="object-position:50% 35%" loading="lazy" decoding="async"></div>
   <section class="manifesto__block">
     <h2>Notre promesse</h2>
     <p>Une taille juste ou un échange offert. Des retours sous trente jours. Des matières choisies pour durer plusieurs hivers.</p>
     <p>Et demain, d'autres chiens longs et bas sur pattes, du corgi au basset, puisque l'allure n'a pas de race.</p>
     <p class="manifesto__closing">Maison Zazou. Le chic parisien, à quatre pattes.</p>
   </section>
-
   <section class="promise" aria-label="Nos engagements">
     <div class="promise__divider">
       <span class="logo logo--small" aria-hidden="true"><span class="logo__maison">MAISON</span><span class="logo__name">ZAZOU</span><span class="logo__paris">PARIS</span></span>
@@ -96,12 +89,12 @@
       <div class="promise__item">
         <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13h32v22H8z"/><path d="M8 14l16 12 16-12"/></svg>
         <span class="promise__title">Service client</span>
-        <span class="promise__text">Contactez-nous par e-mail</span>
+        <span class="promise__text">Réponse sous 24 h par e-mail</span>
       </div>
       <div class="promise__item">
         <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24a14 14 0 1024-9.9"/><path d="M34 7v7h-7"/></svg>
         <span class="promise__title">Retour</span>
-        <span class="promise__text">Sous 30 jours</span>
+        <span class="promise__text">Sous 30 jours, échange de taille offert</span>
       </div>
       <div class="promise__item">
         <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14h36v22H6z"/><path d="M6 20h36"/><path d="M12 30h8"/></svg>
@@ -147,17 +140,17 @@
       </nav>
     </div>
     <div class="footer__bottom">
-      <form class="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form class="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-ok="Merci ! Vous recevrez les avant-premières de la Maison.">
         <input type="hidden" name="form-name" value="newsletter">
         <p class="visually-hidden"><label>Ne pas remplir : <input name="bot-field"></label></p>
         <div class="newsletter__row">
           <label class="newsletter__label" for="nl-email">Newsletter</label>
-          <input id="nl-email" name="email" type="email" placeholder="Adresse e-mail" required>
+          <input id="nl-email" name="email" type="email" placeholder="Adresse e-mail" autocomplete="email" required>
           <button type="submit">S'inscrire</button>
         </div>
         <label class="newsletter__consent"><input type="checkbox" name="consentement" required>J'accepte la politique de confidentialité de la newsletter</label>
       </form>
-      <span class="copyright">Copyright © 2026 Maison Zazou. Tous droits réservés · Photos : Unsplash</span>
+      <span class="copyright">© 2026 Maison Zazou. Tous droits réservés · Photos : Unsplash</span>
     </div>
   </div>
 </footer>

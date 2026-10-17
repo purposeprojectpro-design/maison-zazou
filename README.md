@@ -16,6 +16,7 @@ Site statique (HTML + CSS, sans framework) prêt pour GitHub et Netlify.
 | `mentions-legales.html` | Mentions légales — **à compléter** (champs entre crochets) |
 | `404.html` | Page introuvable |
 | `styles.css` | Styles (polices Poppins + Montserrat via Google Fonts) |
+| `site.js` | En-tête collant, menu mobile, apparition des images, formulaires sans rechargement |
 | `netlify.toml` | Configuration Netlify (pas de build) |
 | `favicon.svg` | Icône d'onglet |
 
